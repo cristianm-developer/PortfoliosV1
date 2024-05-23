@@ -1,0 +1,19 @@
+<div id="NameAndTitle">
+    <h1>{{PersonalData.Nome}}</h1>
+    <h2>{{PersonalData.Title}}</h2>
+</div>
+
+<div id="TechsListAnd3d">
+    <div>
+        
+        
+        <img style="object-fit: scale-down;" src="https://st3.depositphotos.com/1518767/14155/i/450/depositphotos_141552226-stock-photo-man-working-on-desktop-pc.jpg"> 
+        
+    </div>
+    <div>
+        <h3>{{PersonalData.Job}}</h3>
+        <div id="MainTechs">
+            <h4 *ngFor="let item of PersonalData.MainTechs">{{item.Name}}</h4>            
+        </div>
+    </div>
+</div>

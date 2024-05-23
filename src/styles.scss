@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@use './App/Scss/Utils/Clear-base.scss';
+@use './App/Scss/Themes/Font-selector.scss';
+@use './App/Scss/Themes/Light-theme.scss';
+@use './App/Scss/Themes/Dark-theme.scss';
+@use './App/Scss/Base/Elements-base.scss';

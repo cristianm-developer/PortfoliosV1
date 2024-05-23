@@ -1,0 +1,14 @@
+:host{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#TechsListAnd3d{
+    display: flex;
+    flex-wrap: wrap;
+
+    div{
+        flex: 1;
+    }
+}

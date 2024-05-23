@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GeneralInformationComponent } from '../general-information/general-information.component';
 
 const routes: Routes = [
   {
-    path: '', 
-    loadChildren : () => import('./Modules/Articles/articles/articles.module').then(m => m.ArticlesModule)
+    path: '',
+    component: GeneralInformationComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
