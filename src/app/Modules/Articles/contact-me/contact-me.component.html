@@ -1,0 +1,42 @@
+
+<div id="info-Container">
+    <div class="info-Wrapper">
+        <app-icon class="main-Icon" icon="fa-brands fa-whatsapp"[fontSize]="100 * (ResponsiveService.WindowSize + 1)"  [origin]="IconsOrigin.FontAwesome"></app-icon>
+        <h2 class="title">Whatsapp</h2>
+        <div class="contact-Info">
+            <div class="contact-Info-Wrapper">
+                <h3><b>{{PersonalData.ContactInfo.Whatsapp | mask: '+00 (00) 00000-0000'}}</b></h3>
+                <app-icon icon="fa-regular fa-copy" [origin]="IconsOrigin.FontAwesome"></app-icon>
+            </div>
+            <app-icon icon="fa-solid fa-pen" [origin]="IconsOrigin.FontAwesome"></app-icon>
+        </div>
+    </div>
+    
+    <div class="info-Wrapper">
+        <app-icon class="main-Icon" icon="fa-regular fa-envelope"[fontSize]="100 * (ResponsiveService.WindowSize + 1)"  [origin]="IconsOrigin.FontAwesome"></app-icon>
+        <h2 class="title">Email</h2>
+        <div class="contact-Info">
+            <div class="contact-Info-Wrapper">
+                <h3><b>{{PersonalData.ContactInfo.Email}}</b></h3>
+                <app-icon icon="fa-regular fa-copy" [origin]="IconsOrigin.FontAwesome"></app-icon>
+            </div>
+            <app-icon icon="fa-solid fa-paper-plane" [origin]="IconsOrigin.FontAwesome"></app-icon>
+        </div>
+    </div>
+    
+    <div class="info-Wrapper">
+        <app-icon class="main-Icon" icon="fa-brands fa-linkedin"[fontSize]="100 * (ResponsiveService.WindowSize + 1)"  [origin]="IconsOrigin.FontAwesome"></app-icon>
+        <h2 class="title">Linkedin</h2>
+        <div class="contact-Info">
+            <div class="contact-Info-Wrapper">
+                <h3><b>{{PersonalData.ContactInfo.Linkedin}}</b></h3>
+                <app-icon icon="fa-regular fa-copy" [origin]="IconsOrigin.FontAwesome"></app-icon>
+            </div>
+            <app-icon icon="fa-solid fa-globe" [origin]="IconsOrigin.FontAwesome"></app-icon>
+        </div>
+    </div>
+</div>
+
+<div class="contact-Phrase">
+    <h2>{{PersonalData.ContactInfo.ContactPhrase}}</h2>
+</div>

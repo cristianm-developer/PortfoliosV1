@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
