@@ -6,6 +6,11 @@
     appearance: none;
     list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
+
+    &:visited{
+        all: unset;
+    }
 
     button{
         background: none;
