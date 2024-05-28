@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild, viewChild } from '@angular/core';
 import { Application } from '@splinetool/runtime';
 
 @Component({
@@ -8,13 +8,15 @@ import { Application } from '@splinetool/runtime';
 })
 export class Container3dComponent implements AfterViewInit {
 
+  @Input('url')urlScene: string = 'https://prod.spline.design/aE4EBMgvd44GUzuJ/scene.splinecode';
+
   constructor(){
   }
   
   async ngAfterViewInit() {
     const canvas = document.getElementById("canvas3d") as HTMLCanvasElement;
     const app = new Application(canvas);
-    await app.load('https://prod.spline.design/CFaoHqVaw0ENkZcF/scene.splinecode');
+    await app.load(this.urlScene);
   }
 }
 
