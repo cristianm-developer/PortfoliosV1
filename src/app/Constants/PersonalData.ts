@@ -2,8 +2,9 @@ import { IconsOrigin } from "../Components/icon/icon.component";
 import { PersonalDataWrapper } from "../Interfaces/PersonalData";
 
 export const PersonalDataObj: PersonalDataWrapper = {
-    Nome: "Cristian Marín",
-    Title: "Eng.Software - 2025 UNOPAR",
+    Name: "Cristian Marín",
+    Title: "Software Engineer",
+    TitleInfo: "Unopar - 2025",
     Job: "Fullstack Developer",
     MainTechs: [
         {Name: "Angular", Icon: "fa-brands fa-angular" , Origin: IconsOrigin.FontAwesome},

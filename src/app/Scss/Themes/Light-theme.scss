@@ -1,8 +1,22 @@
-:root{
-    --primary: #2e62f1;
-    --body: #ffffff;
-    --body-accent: rgb(219, 218, 218);
+:root .light-theme{
+
+    &{
+        background: url(../../../assets/Images/Bg/BgIcones1.svg);
+        background-repeat: repeat;
+        background-size: 30%;
+
+    }
+
+    --primary: #2e62f1b7;
+    --primary-Text: white;
+    --segundary: #21a12cc7;
+    --segundary-Text: white;
+
+    --border-Fade: rgba(0, 0, 0, 0.158);
+
+    --dark-Accent: rgb(34, 34, 34);
+    --dark-Accent-Text: white;
+
     --text-menu: #ffffff;
     --text-body: #444444; 
-
 }

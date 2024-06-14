@@ -1,6 +1,7 @@
 export interface PersonalDataWrapper{
-    Nome:string;
+    Name:string;
     Title:string;
+    TitleInfo:string;
     Job:String;
     AboutMe:string;
     MainTechs:IconTag[];

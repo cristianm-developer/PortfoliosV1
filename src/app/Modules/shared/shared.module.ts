@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IconComponent } from '../../Components/icon/icon.component';
-import { NgxMaskDirective, NgxMaskPipe, NgxMaskService, provideEnvironmentNgxMask } from 'ngx-mask';
-import { Container3dComponent } from '../../Components/container3d/container3d.component';
+import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-mask';
+import {MatIcon, MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
-  declarations: [IconComponent, Container3dComponent],
+  declarations: [IconComponent],
   imports: [
     CommonModule,
     NgxMaskPipe,
-    NgxMaskDirective
+    NgxMaskDirective,
+    MatIconModule
   ],
   providers:[
     provideEnvironmentNgxMask()
   ],
   exports:[
     IconComponent,
+    MatIconModule,
     NgxMaskPipe,
-    NgxMaskDirective,
-    Container3dComponent
+    NgxMaskDirective
   ]
 })
 export class SharedModule { }

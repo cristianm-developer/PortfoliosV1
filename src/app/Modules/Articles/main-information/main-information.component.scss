@@ -1,0 +1,161 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    align-self: center;
+    overflow-y: auto;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--dark-Accent);
+    border-radius: 0% 0% 0% 300px / 0% 0% 0% 100px ;
+    box-shadow: var(--box-shadown-inner-1);
+
+    background-image: url(../../../../assets/Images/Bg/LaptopOnDesk1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 40%;
+    background-blend-mode: overlay;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#AreYouReadyText{
+    color: var(--dark-Accent-Text);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 24px;
+}
+
+#Greetings{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+#IconsWrapper{
+    justify-self: flex-end;
+    align-self: center;
+    padding: 0 24px;
+    display: flex;
+    gap: 24px;
+}
+#ImgSubjectWrapper{
+    background-color: rgba(255, 255, 255, 0.301);
+    width: min-content;
+    display: flex;
+
+}
+#ImgSubject{
+    width: 350px;
+    border-bottom-left-radius: 30px;
+    overflow: hidden;
+
+    
+
+}
+
+#FeaturesWrapper{
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+
+    max-height: 450px;
+    padding: 12px;
+}
+
+#FeaturesCardsWrapper{
+    display: grid;  
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    width: 100%;
+
+    //height: min-content;
+    height: 100%;
+   overflow: auto;
+
+    border-bottom-right-radius: var(--border-radius-md);
+    background-color: rgba(255, 255, 255, 0.479);
+    border-bottom: 1px solid var(--border-Fade);
+    border-right: 1px solid var(--border-Fade);
+
+    align-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.feature-card{
+    padding: 12px;
+    gap: 6px;
+    display: flex;
+    height: min-content;
+    align-items: center;
+
+    border-radius: var(--border-radius-sm);
+    background-color: var(--border-Fade);
+    box-shadow: var(--box-shadow-drop-1);
+
+    &:hover{
+        filter: brightness(1.1);
+
+    }
+    
+}
+
+.contentFeatures{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (width <= 1200px) {
+        span:not(:hover),span:not(:active){
+            display: none;
+        }
+    }
+}
+
+.padding-left-200{
+    padding-left: 200px;
+}
+
+.colspan{
+    grid-column: span 2;
+}
+
+.iconImg{
+    height: 80px;
+
+    overflow: hidden;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.349));
+
+    img{
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+
+    }
+}
+
+
+.iconFeatures{
+    height: 100px;
+
+    @media screen and (width <= 1000px){
+        height: 50px;
+    }
+}

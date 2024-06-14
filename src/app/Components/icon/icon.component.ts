@@ -9,7 +9,7 @@ export class IconComponent {
   @Input() icon:string | undefined;
   @Input() origin: number | undefined;
   @Input() fontSize: number = 24;
-  @Input() color: string = 'var(--text-body)'
+  @Input() color: string = 'var(--text)'
 
   IconsOrigin = IconsOrigin;
 }

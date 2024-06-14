@@ -1,15 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    color: var(--text);
 }
 
 h1{
-    font-weight: lighter;
+    font-weight:400;
+    font-size: 60px;
 }
 h2{
-    font-weight:lighter;
+    font-weight:300;
+    font-size: 40px;
 }
 h3{
     font-weight: lighter;
+    font-size: 32px;
+}
+
+a{
+    font-weight:600;
+}
+
+button{
+    padding: 8px 16px;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+b{
+    font-weight: 700;
 }
